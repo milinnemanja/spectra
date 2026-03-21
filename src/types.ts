@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     description: { sr: 'Zid od veštačke stene u dnevnoj sobi koji pruža toplinu i luksuz.', en: 'Artificial stone wall in the living room providing warmth and luxury.' },
     category: 'enterijer',
     subcategory: { sr: 'Dnevna Soba', en: 'Living Room' },
-    imageUrl: '/Images/living-room.jpg',
+    imageUrl: '/Images/3bcb241c76e32c3289b6fc71a4b5baa8.jpg',
     gallery: ['/Images/living-room-1.jpg', '/Images/living-room-2.jpg', '/Images/living-room-3.jpg']
   },
   {
