@@ -9,9 +9,9 @@ export const Admin = () => {
   const [password, setPassword] = useState('');
   const [projects, setProjects] = useState<Project[]>([]);
   const [siteSettings, setSiteSettings] = useState<any>({
-    featuresImageUrl: '/Images/features.jpg',
-    aboutImageUrl: '/Images/about.jpg',
-    ownerImageUrl: '/Images/owner.jpg',
+    featuresImageUrl: '/Images/dvoriste2.jpg',
+    aboutImageUrl: '/Images/exteriorpool.jpg',
+    ownerImageUrl: '/Images/owner.jpeg',
     logoImageUrl: ''
   });
   const [activeTab, setActiveTab] = useState<'projects' | 'settings'>('projects');
