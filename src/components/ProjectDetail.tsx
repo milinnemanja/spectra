@@ -149,7 +149,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ lang }) => {
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = `https://picsum.photos/seed/lightbox/1200/900`;
+                  (e.target as HTMLImageElement).src = `Images/dvoristemain.jpg`;
                 }}
               />
               
