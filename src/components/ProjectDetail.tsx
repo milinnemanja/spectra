@@ -78,7 +78,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ lang }) => {
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${project.id}/1200/900`;
+                (e.target as HTMLImageElement).src = `/Images/dvoriste2.jpg`;
               }}
             />
             <button 
@@ -114,7 +114,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ lang }) => {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${project.id}-${index}/800/800`;
+                  (e.target as HTMLImageElement).src = `Images/dvoristemain.jpg`;
                 }}
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
