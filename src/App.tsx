@@ -67,7 +67,7 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-background overflow-hidden">
+      <section className="py-24 bg-background text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -79,10 +79,10 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
               <span className="font-lexend text-primary text-xs uppercase tracking-[0.4em] mb-4 block">
                 {t.features.subtitle}
               </span>
-              <h2 className="text-4xl md:text-5xl font-playfair mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-playfair mb-6 leading-tight text-white">
                 {t.features.title}
               </h2>
-              <p className="text-lg opacity-70 font-spline mb-10 leading-relaxed">
+              <p className="text-lg opacity-90 font-spline mb-10 leading-relaxed text-white/80">
                 {t.features.description}
               </p>
               
@@ -95,8 +95,8 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
                         <Icon size={24} />
                       </div>
                       <div>
-                        <h3 className="font-playfair text-xl mb-2">{item.title}</h3>
-                        <p className="text-sm opacity-60 font-spline leading-relaxed">{item.description}</p>
+                        <h3 className="font-playfair text-xl mb-2 text-white">{item.title}</h3>
+                        <p className="text-sm opacity-60 font-spline leading-relaxed text-white/60">{item.description}</p>
                       </div>
                     </div>
                   );
@@ -124,7 +124,7 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-primary/5">
+      <section className="py-24 bg-primary/5 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <motion.div
@@ -136,7 +136,7 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
               <span className="font-lexend text-primary text-xs uppercase tracking-[0.4em] mb-4 block">
                 {t.services.subtitle}
               </span>
-              <h2 className="text-4xl md:text-5xl font-playfair mb-6">
+              <h2 className="text-4xl md:text-5xl font-playfair mb-6 text-white">
                 {t.services.title}
               </h2>
             </motion.div>
@@ -157,8 +157,8 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
                     <Icon size={28} />
                   </div>
-                  <h3 className="font-playfair text-2xl mb-4">{service.title}</h3>
-                  <p className="opacity-60 font-spline leading-relaxed">
+                  <h3 className="font-playfair text-2xl mb-4 text-white">{service.title}</h3>
+                  <p className="opacity-60 font-spline leading-relaxed text-white/60">
                     {service.description}
                   </p>
                 </motion.div>
@@ -211,7 +211,7 @@ export default function App() {
         </Routes>
 
         {/* Footer */}
-        <footer className="py-12 bg-background border-t border-primary/10">
+        <footer className="py-12 bg-background border-t border-primary/10 text-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="flex items-center gap-2">
@@ -219,11 +219,11 @@ export default function App() {
               </div>
               
               <div className="flex gap-8">
-                <a href="#" className="opacity-60 hover:text-primary transition-colors"><Instagram size={20} /></a>
-                <a href="#" className="opacity-60 hover:text-primary transition-colors"><Facebook size={20} /></a>
+                <a href="#" className="text-white/60 hover:text-primary transition-colors"><Instagram size={20} /></a>
+                <a href="#" className="text-white/60 hover:text-primary transition-colors"><Facebook size={20} /></a>
               </div>
 
-              <p className="text-xs opacity-40 font-host uppercase tracking-widest">
+              <p className="text-xs text-white/40 font-host uppercase tracking-widest">
                 {t.footer.rights}
               </p>
             </div>

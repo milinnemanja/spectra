@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) =
                 key={link.name}
                 to={link.href}
                 className={`font-host text-sm uppercase tracking-widest transition-colors hover:text-primary ${
-                  location.pathname === link.href ? 'text-primary font-bold' : ''
+                  location.pathname === link.href ? 'text-primary font-bold' : 'text-white'
                 }`}
               >
                 {link.name}
@@ -52,27 +52,27 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) =
             <div className="flex items-center gap-4 border-l border-primary/20 pl-8">
               <button
                 onClick={() => setLang(lang === 'sr' ? 'en' : 'sr')}
-                className="flex items-center gap-2 font-host text-xs uppercase tracking-widest hover:text-primary transition-colors"
+                className="flex items-center gap-2 font-host text-xs uppercase tracking-widest text-white hover:text-primary transition-colors border border-white/20 px-3 py-1.5 rounded-full hover:border-primary/50"
               >
-                <Globe size={16} />
+                <Globe size={14} />
                 {lang === 'sr' ? 'EN' : 'SR'}
               </button>
             </div>
           </div>
 
           {/* Mobile Toggle */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-3">
             <button
               onClick={() => setLang(lang === 'sr' ? 'en' : 'sr')}
-              className="p-2 text-primary font-host text-sm font-bold tracking-widest"
+              className="px-3 py-1.5 border border-primary/30 text-primary rounded-full font-host text-xs font-bold tracking-widest hover:bg-primary/10 transition-colors"
             >
               {lang === 'sr' ? 'EN' : 'SRB'}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-primary"
+              className="p-2 text-primary border border-primary/30 rounded-xl hover:bg-primary/10 transition-colors"
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) =
                   to={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-4 font-host text-lg uppercase tracking-widest hover:bg-primary/5 ${
-                    location.pathname === link.href ? 'text-primary font-bold' : ''
+                    location.pathname === link.href ? 'text-primary font-bold' : 'text-white'
                   }`}
                 >
                   {link.name}

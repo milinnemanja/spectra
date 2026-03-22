@@ -12,7 +12,7 @@ export const About: React.FC<AboutProps> = ({ lang, siteSettings }) => {
   const t = translations[lang].about;
 
   return (
-    <section className="py-32 bg-surface-light dark:bg-muted-dark/20 min-h-screen">
+    <section className="py-32 bg-background text-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -20,22 +20,22 @@ export const About: React.FC<AboutProps> = ({ lang, siteSettings }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-6xl font-playfair mb-8">
+            <h2 className="text-4xl md:text-6xl font-playfair mb-8 text-white">
               {t.title} <br />
               <span className="text-primary">{t.titleAccent}</span>
             </h2>
-            <div className="space-y-6 text-lg opacity-80 font-spline">
+            <div className="space-y-6 text-lg opacity-90 font-spline text-white/80">
               <p>{t.p1}</p>
               <p>{t.p2}</p>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-8">
               <div>
                 <h4 className="text-4xl font-lexend text-primary mb-1">5+</h4>
-                <p className="text-sm uppercase tracking-widest opacity-60">{t.statsExp}</p>
+                <p className="text-sm uppercase tracking-widest opacity-60 text-white/60">{t.statsExp}</p>
               </div>
               <div>
                 <h4 className="text-4xl font-lexend text-primary mb-1">120+</h4>
-                <p className="text-sm uppercase tracking-widest opacity-60">{t.statsProjects}</p>
+                <p className="text-sm uppercase tracking-widest opacity-60 text-white/60">{t.statsProjects}</p>
               </div>
             </div>
           </motion.div>
@@ -91,16 +91,16 @@ export const About: React.FC<AboutProps> = ({ lang, siteSettings }) => {
             <span className="font-lexend text-primary text-[10px] sm:text-xs uppercase tracking-[0.4em] mb-4 block">
               {t.owner.title}
             </span>
-            <h2 className="text-3xl md:text-5xl font-playfair mb-6 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-playfair mb-6 leading-tight text-white">
               {t.owner.name}
             </h2>
-            <p className="text-base md:text-lg opacity-70 font-spline mb-8 md:mb-10 leading-relaxed italic">
+            <p className="text-base md:text-lg opacity-90 font-spline mb-8 md:mb-10 leading-relaxed italic text-white/80">
               "{t.owner.description}"
             </p>
             
             <div className="space-y-4 md:space-y-6">
               <h3 className="text-xl md:text-2xl font-playfair text-primary">{t.owner.designTitle}</h3>
-              <p className="text-base md:text-lg opacity-70 font-spline leading-relaxed">
+              <p className="text-base md:text-lg opacity-90 font-spline leading-relaxed text-white/80">
                 {t.owner.designText}
               </p>
             </div>

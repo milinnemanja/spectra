@@ -2,12 +2,12 @@
 
 @theme {
   --color-primary: #41E199;
-  --color-background: var(--color-background);
-  --color-text: var(--color-text);
-  --color-bg-light: #fdfef6;
+  --color-background: #1a1b19;
+  --color-text: #fdfef6;
+  --color-bg-light: #1a1b19;
   --color-bg-dark: #1a1b19;
   --color-muted-dark: #404139;
-  --color-surface-light: #fdfdf6;
+  --color-surface-light: #1a1b19;
 
   --font-host: "Host Grotesk", sans-serif;
   --font-lexend: "Lexend Exa", sans-serif;
@@ -18,11 +18,16 @@
 
 @layer base {
   body {
-    @apply font-spline transition-colors duration-300;
+    @apply font-spline transition-colors duration-300 bg-background text-text;
   }
   
   h1, h2, h3, h4 {
-    @apply font-playfair;
+    @apply font-playfair text-text;
+  }
+
+  /* Ensure links and buttons are visible by default */
+  a, button {
+    @apply transition-colors;
   }
 }
 

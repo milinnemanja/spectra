@@ -39,11 +39,11 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ lang }) => {
   };
 
   return (
-    <section className="py-32 min-h-screen">
+    <section className="py-32 min-h-screen bg-background text-white">
       <div className="max-w-7xl mx-auto px-4">
         <button
           onClick={() => navigate('/catalog')}
-          className="flex items-center gap-2 text-xs uppercase tracking-widest font-host mb-12 hover:text-primary transition-colors group"
+          className="flex items-center gap-2 text-xs uppercase tracking-widest font-host mb-12 text-primary hover:text-primary/80 transition-colors group"
         >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
           Nazad na Katalog
@@ -58,10 +58,10 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ lang }) => {
             <span className="text-xs uppercase tracking-[0.4em] text-primary mb-4 block font-host">
               {project.subcategory[lang]}
             </span>
-            <h1 className="text-4xl md:text-6xl font-playfair mb-8 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-playfair mb-8 leading-tight text-white">
               {project.title[lang]}
             </h1>
-            <p className="text-lg opacity-70 font-spline leading-relaxed mb-12">
+            <p className="text-lg opacity-90 font-spline leading-relaxed mb-12 text-white/80">
               {project.description[lang]}
             </p>
           </motion.div>
