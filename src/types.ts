@@ -18,8 +18,8 @@ export const PROJECTS: Project[] = [
     description: { sr: 'Zid od veštačke stene u dnevnoj sobi koji pruža toplinu i luksuz.', en: 'Artificial stone wall in the living room providing warmth and luxury.' },
     category: 'enterijer',
     subcategory: { sr: 'Dnevna Soba', en: 'Living Room' },
-    imageUrl: '/Images/living-room.jpg',
-    gallery: ['/Images/living-room-1.jpg', '/Images/living-room-2.jpg', '/Images/living-room-3.jpg']
+    imageUrl: '/Images/dnevnamain.png',
+    gallery: ['/Images/dnevna1.jpg', '/Images/dnevna2.jpg', '/Images/dnevna3.jpg', '/Images/dnevna4.jpg']
   },
   {
     id: '2',
@@ -27,8 +27,8 @@ export const PROJECTS: Project[] = [
     description: { sr: 'Detalji od kamena koji se savršeno uklapaju sa modernim kuhinjskim elementima.', en: 'Stone details that blend perfectly with modern kitchen elements.' },
     category: 'enterijer',
     subcategory: { sr: 'Kuhinja', en: 'Kitchen' },
-    imageUrl: '/Images/kitchen.jpg',
-    gallery: ['/Images/kitchen-1.jpg', '/Images/kitchen-2.jpg']
+    imageUrl: '/Images/kuhinjamain.jpg',
+    gallery: ['/Images/kuhinja1.jpg', '/Images/kuhinja2.jpg', '/Images/kuhinja3.jpg', '/Images/kuhinja4.jpg', '/Images/kuhinja6.jpg'  ]
   },
   {
     id: '3',
@@ -36,17 +36,8 @@ export const PROJECTS: Project[] = [
     description: { sr: 'Pretvorite vaše kupatilo u privatnu banju uz teksturu prirodnog kamena.', en: 'Turn your bathroom into a private spa with natural stone texture.' },
     category: 'enterijer',
     subcategory: { sr: 'Kupatilo', en: 'Bathroom' },
-    imageUrl: '/Images/bathroom.jpg',
-    gallery: ['/Images/bathroom-1.jpg', '/Images/bathroom-2.jpg']
-  },
-  {
-    id: '4',
-    title: { sr: 'Letnjikovac iz Snova', en: 'Dream Gazebo' },
-    description: { sr: 'Eksterijer letnjikovca obložen veštačkim stenama za autentičan izgled.', en: 'Gazebo exterior lined with artificial rocks for an authentic look.' },
-    category: 'eksterijer',
-    subcategory: { sr: 'Letnjikovac', en: 'Gazebo' },
-    imageUrl: '/Images/gazebo.jpg',
-    gallery: ['/Images/gazebo-1.jpg', '/Images/gazebo-2.jpg', '/Images/gazebo-3.jpg']
+    imageUrl: '/Images/kupatilomain.jpg',
+    gallery: ['/Images/kupatilo.png', '/Images/kupatilo1.jpg', '/Images/kupatilo2.jpg', '/Images/kupatilo4.jpg', '/Images/kupatilo3.jpg']
   },
   {
     id: '5',
@@ -54,8 +45,8 @@ export const PROJECTS: Project[] = [
     description: { sr: 'Umetničke formacije stena koje oplemenjuju vaš vrt.', en: 'Artistic rock formations that enrich your garden.' },
     category: 'eksterijer',
     subcategory: { sr: 'Dvorište', en: 'Garden' },
-    imageUrl: '/Images/garden.jpg',
-    gallery: ['/Images/garden-1.jpg', '/Images/garden-2.jpg']
+    imageUrl: '/Images/dvoristemain.jpg',
+    gallery: ['/Images/dvoriste1.jpg', '/Images/dvoriste2.jpg', '/Images/dvoriste3.jpg', '/Images/dvoriste4.jpg', ]
   },
   {
     id: '6',
@@ -63,7 +54,7 @@ export const PROJECTS: Project[] = [
     description: { sr: 'Dugotrajna i estetski superiorna rešenja za fasade vaših objekata.', en: 'Durable and aesthetically superior solutions for your building facades.' },
     category: 'eksterijer',
     subcategory: { sr: 'Fasada', en: 'Facade' },
-    imageUrl: '/Images/facade.jpg',
-    gallery: ['/Images/facade-1.jpg', '/Images/facade-2.jpg']
+    imageUrl: '/Images/fasadamain.jpg',
+    gallery: ['/Images/fasada1.jpg', '/Images/fasada2.jpg', '/Images/fasada3.jpg', '/Images/fasada4.jpg', '/Images/fasada5.jpg']
   }
 ];
