@@ -175,9 +175,9 @@ export default function App() {
   const [lang, setLang] = useState<Language>('sr');
   const [projects, setProjects] = useState<Project[]>(PROJECTS);
   const [siteSettings, setSiteSettings] = useState<any>({
-    featuresImageUrl: '/Images/features.jpg',
-    aboutImageUrl: '/Images/about.jpg',
-    ownerImageUrl: '/Images/owner.jpg',
+    featuresImageUrl: '/Images/exteriorpool.jpg',
+    aboutImageUrl: '/Images/dvoristemain.jpg',
+    ownerImageUrl: '/Images/owner.jpeg',
     logoImageUrl: ''
   });
   const t = translations[lang];

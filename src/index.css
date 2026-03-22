@@ -26,14 +26,9 @@
   }
 }
 
-.dark {
-  --color-background: var(--color-bg-dark);
-  --color-text: var(--color-bg-light);
-}
-
-:root:not(.dark) {
-  --color-background: var(--color-bg-light);
-  --color-text: var(--color-bg-dark);
+:root {
+  --color-background: #1a1b19;
+  --color-text: #fdfef6;
 }
 
 body {

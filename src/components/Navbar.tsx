@@ -12,22 +12,9 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) => {
-  const [isDark, setIsDark] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const t = translations[lang].nav;
-
-  useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-  };
 
   const navLinks = [
     { name: t.home, href: '/' },
@@ -70,12 +57,6 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) =
                 <Globe size={16} />
                 {lang === 'sr' ? 'EN' : 'SR'}
               </button>
-              <button
-                onClick={toggleTheme}
-                className="p-2 rounded-full hover:bg-primary/10 transition-colors"
-              >
-                {isDark ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
             </div>
           </div>
 
@@ -86,12 +67,6 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) =
               className="p-2 text-primary font-host text-sm font-bold tracking-widest"
             >
               {lang === 'sr' ? 'EN' : 'SRB'}
-            </button>
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-primary/10 transition-colors"
-            >
-              {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
