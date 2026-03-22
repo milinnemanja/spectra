@@ -33,7 +33,7 @@ const Home = ({ lang, siteSettings }: { lang: Language, siteSettings: any }) => 
             <span className="font-lexend text-primary text-sm uppercase tracking-[0.3em] mb-4 block">
               {t.hero.subtitle}
             </span>
-            <h1 className="text-6xl md:text-8xl font-playfair mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-playfair mb-6 leading-tight">
               {t.hero.title} <br />
               <span className="italic text-primary">{t.hero.titleAccent}</span>
             </h1>
@@ -175,9 +175,9 @@ export default function App() {
   const [lang, setLang] = useState<Language>('sr');
   const [projects, setProjects] = useState<Project[]>(PROJECTS);
   const [siteSettings, setSiteSettings] = useState<any>({
-    featuresImageUrl: '/Images/dvoriste2.jpg',
-    aboutImageUrl: '/Images/dvoristemain.jpg',
-    ownerImageUrl: '/Images/owner.jpeg',
+    featuresImageUrl: '/Images/features.jpg',
+    aboutImageUrl: '/Images/about.jpg',
+    ownerImageUrl: '/Images/owner.jpg',
     logoImageUrl: ''
   });
   const t = translations[lang];
@@ -197,7 +197,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen selection:bg-primary selection:text-white">
+      <div className="min-h-screen selection:bg-primary selection:text-white overflow-x-hidden">
         <ScrollToTop />
         <Navbar lang={lang} setLang={setLang} siteSettings={siteSettings} />
 

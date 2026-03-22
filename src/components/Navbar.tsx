@@ -83,9 +83,9 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, siteSettings }) =
           <div className="md:hidden flex items-center gap-4">
             <button
               onClick={() => setLang(lang === 'sr' ? 'en' : 'sr')}
-              className="p-2 text-primary"
+              className="p-2 text-primary font-host text-sm font-bold tracking-widest"
             >
-              <Globe size={20} />
+              {lang === 'sr' ? 'EN' : 'SRB'}
             </button>
             <button
               onClick={toggleTheme}

@@ -33,9 +33,9 @@ export const Catalog: React.FC<CatalogProps> = ({ lang, projects }) => {
 
         {/* Interiors Section */}
         <div className="mb-32">
-          <div className="flex items-center gap-8 mb-12">
-            <h3 className="text-3xl md:text-4xl font-playfair whitespace-nowrap">{t.interior}</h3>
-            <div className="h-px w-full bg-primary/10" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-12">
+            <h3 className="text-3xl md:text-4xl font-playfair">{t.interior}</h3>
+            <div className="h-px w-full bg-primary/10 hidden sm:block" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {interiors.map((project) => (
@@ -46,9 +46,9 @@ export const Catalog: React.FC<CatalogProps> = ({ lang, projects }) => {
 
         {/* Exteriors Section */}
         <div>
-          <div className="flex items-center gap-8 mb-12">
-            <h3 className="text-3xl md:text-4xl font-playfair whitespace-nowrap">{t.exterior}</h3>
-            <div className="h-px w-full bg-primary/10" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-12">
+            <h3 className="text-3xl md:text-4xl font-playfair">{t.exterior}</h3>
+            <div className="h-px w-full bg-primary/10 hidden sm:block" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {exteriors.map((project) => (

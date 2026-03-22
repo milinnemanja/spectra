@@ -30,11 +30,11 @@ export const About: React.FC<AboutProps> = ({ lang, siteSettings }) => {
             </div>
             <div className="mt-10 grid grid-cols-2 gap-8">
               <div>
-                <h4 className="text-4xl font-lexend text-primary mb-1">10+</h4>
+                <h4 className="text-4xl font-lexend text-primary mb-1">5+</h4>
                 <p className="text-sm uppercase tracking-widest opacity-60">{t.statsExp}</p>
               </div>
               <div>
-                <h4 className="text-4xl font-lexend text-primary mb-1">500+</h4>
+                <h4 className="text-4xl font-lexend text-primary mb-1">120+</h4>
                 <p className="text-sm uppercase tracking-widest opacity-60">{t.statsProjects}</p>
               </div>
             </div>
@@ -61,8 +61,8 @@ export const About: React.FC<AboutProps> = ({ lang, siteSettings }) => {
       </div>
 
       {/* Owner Section */}
-      <div className="max-w-7xl mx-auto px-4 mt-32">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 mt-20 md:mt-32">
+        <div className="grid md:grid-cols-2 gap-12 md:grid-cols-2 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -88,19 +88,19 @@ export const About: React.FC<AboutProps> = ({ lang, siteSettings }) => {
             transition={{ duration: 0.8 }}
             className="order-1 md:order-2"
           >
-            <span className="font-lexend text-primary text-xs uppercase tracking-[0.4em] mb-4 block">
+            <span className="font-lexend text-primary text-[10px] sm:text-xs uppercase tracking-[0.4em] mb-4 block">
               {t.owner.title}
             </span>
-            <h2 className="text-4xl md:text-5xl font-playfair mb-6 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-playfair mb-6 leading-tight">
               {t.owner.name}
             </h2>
-            <p className="text-lg opacity-70 font-spline mb-10 leading-relaxed italic">
+            <p className="text-base md:text-lg opacity-70 font-spline mb-8 md:mb-10 leading-relaxed italic">
               "{t.owner.description}"
             </p>
             
-            <div className="space-y-6">
-              <h3 className="text-2xl font-playfair text-primary">{t.owner.designTitle}</h3>
-              <p className="text-lg opacity-70 font-spline leading-relaxed">
+            <div className="space-y-4 md:space-y-6">
+              <h3 className="text-xl md:text-2xl font-playfair text-primary">{t.owner.designTitle}</h3>
+              <p className="text-base md:text-lg opacity-70 font-spline leading-relaxed">
                 {t.owner.designText}
               </p>
             </div>
